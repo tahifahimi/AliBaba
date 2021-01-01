@@ -1,0 +1,116 @@
+
+.hotels{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 1230px;
+    flex-wrap:wrap;
+    margin-top: 13px;
+}
+
+.hotels > a{
+    margin: 20px 15px;
+    width: 30%;
+    border-radius: 3px;
+    overflow: hidden;
+    border: 1px solid #f1f6f8;
+}
+
+.hotels > a:hover{
+    box-shadow: rgba(19, 19, 19, .15) 0px 0px 5px 0px;
+}
+
+.hotels a > .image{
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 220px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.hotels a > .image .rate{
+    position: absolute;
+    width: 60px;
+    height: 40px;
+    top: 25px;
+    right: 0;
+    color: #2979ff;
+    border-radius: 7px 0 0;
+    background-color: hsla(0,0%,100%,.9);
+    text-align: center;
+}
+
+.hotels a > .image .rate p:first-child{
+    font-weight: 16px;
+    font-weight: 900;
+}
+.hotels a > .image .rate p:last-child{
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 10px;
+}
+
+.hotels > a > .info{
+    padding: 15px;
+    /* width: 100%; */
+    height: 107px;
+}
+
+.hotels > a > .info > hr{
+    border: .5px solid #f0f0f0;
+    margin: 10px 0 25px;
+}
+
+.hotels > a > .info .titlestar .title{
+    font-size: 16px;
+    font-weight: 500;
+    color: #424242;
+    float: right;
+}
+
+.hotels > a > .info .titlestar .stars{
+    font-size: 9px;
+    color: #ffc107;
+    line-height: 24px;
+}
+
+.hotels > a > .info .titlestar .stars i{
+    padding: 0 1.5px;
+}
+
+.hotels > a > .info .titlestar .stars i.disabled{
+    color: #9e9e9e;
+}
+
+
+.hotels > a > .info > .pricebuy .price{
+    float: right;
+    text-align: right;
+}
+
+.hotels > a > .info .pricebuy .price p:first-child{
+    font-size: 14px;
+    font-weight: 400;
+    color: #AAAAAA;
+}
+.hotels > a > .info .pricebuy .price p:last-child{
+    font-size: 14px;
+    font-weight: 700;
+    color: #2979ff;
+    direction: rtl;
+}
+
+.hotels > a > .info > .pricebuy .button{
+    background-color: #2979ff;
+    padding: 5px 15px;
+    margin-top: 15px;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+    border-radius: 3px;
+}

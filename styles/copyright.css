@@ -1,0 +1,55 @@
+.footer > .copyright{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #424242;
+    height: 77px;
+    line-height: 77px;
+}
+
+.footer >.copyright > .wrapper{
+    margin: 0 auto;
+    width: 1170px;
+    flex-wrap:wrap;
+    line-height: 77px;
+    padding: 0 15px;
+
+}
+
+.footer >.copyright > .wrapper > p{
+    float: right;
+    font-size: 12.6px;
+    font-weight: 500;
+    color: #f5f5f5;
+}
+
+
+.footer >.copyright > .wrapper > div {
+    width: 36px;
+    height: 36px;
+    border-radius: 108px;
+    background-color: #646464;
+    float: left;
+    margin-right: 17px;
+    margin-top: 21px;
+}
+.footer >.copyright > .wrapper > div > img{
+    width: 18px;
+    filter: invert(90%);
+    padding: 9px;
+    margin-bottom: 8px;
+}
+.footer >.copyright > .wrapper > div.aparat > img{
+    width: 22px;
+    padding: 7.2px;
+}
+
+.footer >.copyright > .wrapper > div.aparat:hover{
+    background-color:#ed145b;
+}
+.footer >.copyright > .wrapper > div.linkedin:hover{
+    background-color:#0077b5 ;
+}
+.footer >.copyright > .wrapper > div.instagram:hover{
+    background-color:#405de6 ;
+}

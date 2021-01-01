@@ -1,0 +1,163 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Vazir;
+  transition: background-color 250ms ease
+  , border-color 250ms ease
+  , box-shadow 250ms ease
+  ,color 250ms ease;
+
+}
+
+header{
+width: 100%;
+height: 64px;
+position: fixed;
+z-index: 1;
+background-color: white;
+border-bottom-color: rgb(209, 205, 196);
+box-shadow: rgba(0, 0, 0, 0.28) 0px 3px 4px 0px;
+
+}
+
+a, input[type="button"]{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+header > nav{
+  padding: 0 80px;
+}
+
+nav > ul {
+  list-style-type: none;
+  overflow: hidden;
+  /* height: 64px; */
+}
+
+nav > ul.right, nav > ul.right > li {
+  float: right;
+}
+
+nav > ul.left, nav > ul.left > li {
+  float: left;
+}
+
+nav > ul > li > a{
+  display: inline-block;
+  text-align: center;
+  padding: 0 13px;
+  line-height: 64px;
+  font-size: 13px;
+  color: #4b4b48;
+  font-weight: 300;
+}
+
+nav > ul > li > a > i{
+  color: #aaa;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+nav > ul.right > li > a > i{
+  margin-left: 10px;
+}
+nav > ul.left > li > a > i{
+  margin-right: 10px;
+}
+
+nav > ul.right > li:hover *, nav > ul > li > a.button:hover{
+  color: orange; 
+  border-color: orange;
+}
+
+nav > ul > li > a.button{
+  border: 1px solid #d2d2d2;
+  height: 24px;
+  margin-left: 10px;
+  margin-top: 14px;
+  line-height: 24px;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+nav > ul > li.line{
+    width: 1px;
+    background-color: #bdbdbd;
+    margin-top: 18px ;
+    height: 25px;
+    align-self: center;
+}
+
+.rotate{
+  transform: rotate(225deg);
+  margin-left: 5px;
+
+}
+
+.nav-logo{
+  margin-top: 12px;
+  margin-left: 20px;
+  height: 38px;
+}
+
+.v-dropdown{
+    opacity: 0;
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #fff;
+    z-index: 500;
+    border-radius: 3px;
+    box-shadow: 0 0 6px rgba(0,0,0,.15);
+}
+
+#contact:hover .v-dropdown, .dropdown:hover{
+  display: block;
+  opacity: 1;
+}
+
+.v-dropdown p{
+  direction: ltr;
+  display: block;
+  text-align: center;
+  font-weight: 300;
+  font-size: 22px;
+  padding: 6px 20px;
+
+  color: #646464;
+}
+
+.v-dropdown p:first-child{
+  padding-top:20px;
+  font-size: 12px;
+}
+
+.v-dropdown ul::before{
+  content:" " ;
+  border: 0.5px solid orange;
+  display: block;
+  padding: 0;
+}
+.v-dropdown p span{
+  font-weight: 500;
+  color: orange;
+}
+
+.v-dropdown ul li{
+  direction: rtl;
+  text-align: right;
+  display: block;
+    border-bottom: 1px solid #e1e1e1;
+    color: inherit;
+    transition: all .14s ease;
+    padding: 12px 20px;
+    font-size: 13px;
+    color: #646464;
+  cursor: pointer;
+}
+
+#contact{
+  height: 64px;
+}
